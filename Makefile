@@ -5,5 +5,8 @@ install:
 lint:
 	pylint --disable=R,C calculate_sum.py
 
+format:
+	black *.py
+
 test:
 	python -m pytest -vv --cov=calculate_sum test_calculate_sum.py
